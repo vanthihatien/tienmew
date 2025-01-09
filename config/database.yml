@@ -83,6 +83,7 @@ production:
     <<: *default
     database: tiennew_production
     username: tiennew
+    url: <%= ENV['DATABASE_URL'] %>
     password: <%= ENV["TIENNEW_DATABASE_PASSWORD"] %>
   cache:
     <<: *primary_production
